@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+package proto;
+
+option go_package = "./proto/image;imagepb";
+
+import "google/protobuf/empty.proto";
+
+message Image {
+  int32 id = 1;
+  string url = 2;
+}
+
+message ImageId {
+  int32 id = 1;
+}
+
+message ImageList {
+  repeated Image images = 1;
+}
+
+service ImageService {
+  rpc GetAllImages (google.protobuf.Empty) returns (ImageList);
+  rpc GetImageByID (ImageId) returns (Image);
+}

@@ -1,0 +1,85 @@
+networks:
+  tcc:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.30.0.0/16
+
+services:
+  brands-api:
+    build: ./CONTEXTOS/brands-api
+    ports:
+      - "8081:8080"
+    networks:
+      tcc:
+        ipv4_address: 172.30.0.10
+    dns:
+      - 8.8.8.8
+      - 8.8.4.4
+    container_name: brands-api
+
+  categories-api:
+    build: ./CONTEXTOS/categories-api
+    ports:
+      - "8082:8080"
+    networks:
+      tcc:
+        ipv4_address: 172.30.0.11
+    dns:
+      - 8.8.8.8
+      - 8.8.4.4
+    container_name: categories-api
+
+  images-api:
+    build: ./CONTEXTOS/images-api
+    ports:
+      - "8083:8080"
+    networks:
+      tcc:
+        ipv4_address: 172.30.0.12
+    dns:
+      - 8.8.8.8
+      - 8.8.4.4
+    container_name: images-api
+
+  products-api:
+    build: ./CONTEXTOS/products-api
+    ports:
+      - "8084:8080"
+    networks:
+      tcc:
+        ipv4_address: 172.30.0.13
+    dns:
+      - 8.8.8.8
+      - 8.8.4.4
+    container_name: products-api
+
+  sellers-api:
+    build: ./CONTEXTOS/sellers-api
+    ports:
+      - "8085:8080"
+    networks:
+      tcc:
+        ipv4_address: 172.30.0.14
+    dns:
+      - 8.8.8.8
+      - 8.8.4.4
+    container_name: sellers-api
+
+  bff:
+    build: ./BFF
+    ports:
+      - "8080:8080"
+    networks:
+      tcc:
+        ipv4_address: 172.30.0.15
+    dns:
+      - 8.8.8.8
+      - 8.8.4.4
+    depends_on:
+      - brands-api
+      - categories-api
+      - images-api
+      - products-api
+      - sellers-api
+    container_name: bff-api

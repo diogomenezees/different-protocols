@@ -1,0 +1,85 @@
+networks:
+  tcc:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.30.0.0/16
+
+services:
+  brands-api:
+    build: ./CONTEXTOS/brands-api
+    ports:
+      - "50051:8080"
+    networks:
+      tcc:
+        ipv4_address: 172.30.0.10
+    dns:
+      - 8.8.8.8
+      - 8.8.4.4
+    container_name: brands-grpc-api
+
+  categories-api:
+    build: ./CONTEXTOS/categories-api
+    ports:
+      - "50052:8080"
+    networks:
+      tcc:
+        ipv4_address: 172.30.0.11
+    dns:
+      - 8.8.8.8
+      - 8.8.4.4
+    container_name: categories-grpc-api
+
+  images-api:
+    build: ./CONTEXTOS/images-api
+    ports:
+      - "50053:8080"
+    networks:
+      tcc:
+        ipv4_address: 172.30.0.12
+    dns:
+      - 8.8.8.8
+      - 8.8.4.4
+    container_name: images-grpc-api
+
+  products-api:
+    build: ./CONTEXTOS/products-api
+    ports:
+      - "50054:8080"
+    networks:
+      tcc:
+        ipv4_address: 172.30.0.13
+    dns:
+      - 8.8.8.8
+      - 8.8.4.4
+    container_name: products-grpc-api
+
+  sellers-api:
+    build: ./CONTEXTOS/sellers-api
+    ports:
+      - "50050:8080"
+    networks:
+      tcc:
+        ipv4_address: 172.30.0.14
+    dns:
+      - 8.8.8.8
+      - 8.8.4.4
+    container_name: sellers-grpc-api
+
+  bff:
+    build: ./BFF
+    ports:
+      - "8070:8080"
+    networks:
+      tcc:
+        ipv4_address: 172.30.0.15
+    dns:
+      - 8.8.8.8
+      - 8.8.4.4
+    depends_on:
+      - brands-api
+      - categories-api
+      - images-api
+      - products-api
+      - sellers-api
+    container_name: bff-grpc-api

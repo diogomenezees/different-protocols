@@ -1,0 +1,85 @@
+networks:
+  tcc:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.30.0.0/16
+
+services:
+  brands-api:
+    build: ./CONTEXTOS/brands-api
+    ports:
+      - "8091:8080"
+    networks:
+      tcc:
+        ipv4_address: 172.30.0.10
+    dns:
+      - 8.8.8.8
+      - 8.8.4.4
+    container_name: brands-msgpack-api
+
+  categories-api:
+    build: ./CONTEXTOS/categories-api
+    ports:
+      - "8092:8080"
+    networks:
+      tcc:
+        ipv4_address: 172.30.0.11
+    dns:
+      - 8.8.8.8
+      - 8.8.4.4
+    container_name: categories-msgpack-api
+
+  images-api:
+    build: ./CONTEXTOS/images-api
+    ports:
+      - "8093:8080"
+    networks:
+      tcc:
+        ipv4_address: 172.30.0.12
+    dns:
+      - 8.8.8.8
+      - 8.8.4.4
+    container_name: images-msgpack-api
+
+  products-api:
+    build: ./CONTEXTOS/products-api
+    ports:
+      - "8094:8080"
+    networks:
+      tcc:
+        ipv4_address: 172.30.0.13
+    dns:
+      - 8.8.8.8
+      - 8.8.4.4
+    container_name: products-msgpack-api
+
+  sellers-api:
+    build: ./CONTEXTOS/sellers-api
+    ports:
+      - "8095:8080"
+    networks:
+      tcc:
+        ipv4_address: 172.30.0.14
+    dns:
+      - 8.8.8.8
+      - 8.8.4.4
+    container_name: sellers-msgpack-api
+
+  bff:
+    build: ./BFF
+    ports:
+      - "8090:8080"
+    networks:
+      tcc:
+        ipv4_address: 172.30.0.15
+    dns:
+      - 8.8.8.8
+      - 8.8.4.4
+    depends_on:
+      - brands-api
+      - categories-api
+      - images-api
+      - products-api
+      - sellers-api
+    container_name: bff-msgpack-api

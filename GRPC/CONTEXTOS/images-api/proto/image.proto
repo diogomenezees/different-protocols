@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+package proto;
+
+option go_package = "./proto;imagepb";
+
+message Image {
+  int32 id = 1;
+  string url = 2;
+}
+
+message Empty {}
+
+message ImageId {
+  int32 id = 1;
+}
+
+message ImageList {
+  repeated Image images = 1;
+}
+
+service ImageService {
+  rpc GetAllImages (Empty) returns (ImageList);
+  rpc GetImageByID (ImageId) returns (Image);
+}

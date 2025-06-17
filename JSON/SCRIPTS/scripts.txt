@@ -1,0 +1,5 @@
+Sequencial
+docker run --rm -i -e BASE_URL=http://host.docker.internal:8080 -v ${pwd}/test-json-sequencial.js:/test.js:ro -v ${pwd}:/output loadimpact/k6 run --summary-export=/output/resultado-test-container-json-sequencial-1t-50vus.json /test.js
+
+Paralelo
+docker run --rm -i -e BASE_URL=http://host.docker.internal:8080 -v ${pwd}/test-json-paralelo.js:/test.js:ro -v ${pwd}:/output loadimpact/k6 run --summary-export=/output/resultado-test-container-json-paralelo-1t-50vus.json /test.js

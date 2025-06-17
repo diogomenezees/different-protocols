@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+package proto;
+
+option go_package = "./proto/seller;sellerpb";
+
+import "google/protobuf/empty.proto";
+
+message Seller {
+  int32 id = 1;
+  string name = 2;
+}
+
+message SellerId {
+  int32 id = 1;
+}
+
+message SellerList {
+  repeated Seller sellers = 1;
+}
+
+service SellerService {
+  rpc GetAllSellers (google.protobuf.Empty) returns (SellerList);
+  rpc GetSellerByID (SellerId) returns (Seller);
+}

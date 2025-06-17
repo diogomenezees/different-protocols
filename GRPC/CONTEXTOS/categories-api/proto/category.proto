@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+package proto;
+
+option go_package = "./proto;categorypb";
+
+message Category {
+  int32 id = 1;
+  string name = 2;
+}
+
+message Empty {}
+
+message CategoryId {
+  int32 id = 1;
+}
+
+message CategoryList {
+  repeated Category categories = 1;
+}
+
+service CategoryService {
+  rpc GetAllCategories (Empty) returns (CategoryList);
+  rpc GetCategoryByID (CategoryId) returns (Category);
+}

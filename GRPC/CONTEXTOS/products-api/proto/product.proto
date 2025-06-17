@@ -1,0 +1,39 @@
+syntax = "proto3";
+
+package proto;
+
+option go_package = "./proto;productpb";
+
+message Product {
+  int32 id = 1;
+  string name = 2;
+  string slug = 3;
+  string description = 4;
+  Price price = 5;
+  int32 seller_id = 6;
+  int32 brand_id = 7;
+  repeated int32 categories = 8;
+  repeated int32 images = 9;
+}
+
+message Empty {}
+
+message Slug {
+  string slug = 1;
+}
+
+message ProductList {
+  repeated Product products = 1;
+}
+
+
+
+message Price {
+  float original = 1;
+  float special_price = 2;
+}
+
+service ProductService {
+  rpc GetAllProducts (Empty) returns (ProductList);
+  rpc GetProductBySlug (Slug) returns (Product);
+}

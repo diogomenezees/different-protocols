@@ -1,0 +1,28 @@
+syntax = "proto3";
+
+package proto;
+
+option go_package = "./proto/brand;brandpb";
+
+import "google/protobuf/empty.proto";
+
+message Brand {
+  int32 id = 1;
+  string name = 2;
+  string description = 3;
+  string country = 4;
+  bool active = 5;
+}
+
+message BrandRequest {
+  int32 id = 1;
+}
+
+message BrandList {
+  repeated Brand brands = 1;
+}
+
+service BrandService {
+  rpc GetAllBrands (google.protobuf.Empty) returns (BrandList);
+  rpc GetBrandByID (BrandRequest) returns (Brand);
+}
