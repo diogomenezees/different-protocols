@@ -1,5 +1,9 @@
-Sequencial
-docker run --rm -i -e BASE_URL=http://host.docker.internal:8080 -v ${pwd}/test-json-sequencial.js:/test.js:ro -v ${pwd}:/output loadimpact/k6 run --summary-export=/output/resultado-test-container-json-sequencial-1t-50vus.json /test.js
+Paralelo ( Consolidado + Grafico + detalhado )
+docker run --rm -i -e BASE_URL=http://host.docker.internal:8080 -v ${pwd}/json-paralelo-grafico.js:/test.js:ro -v ${pwd}:/output loadimpact/k6 run --summary-export=/output/json-1t-consolidado.json --out json=/output/json-1t-detalhado.json /test.js
 
-Paralelo
-docker run --rm -i -e BASE_URL=http://host.docker.internal:8080 -v ${pwd}/test-json-paralelo.js:/test.js:ro -v ${pwd}:/output loadimpact/k6 run --summary-export=/output/resultado-test-container-json-paralelo-1t-50vus.json /test.js
+Gerar as Imagens Consolidado
+python k6_compare_summary.py --labels "JSON Paralelo 1" "JSON Paralelo 2" "JSON Paralelo 3" .\json-1t-consolidado.json .\json-2t-consolidado.json .\json-3t-consolidado.json
+
+Gerar as Imagens Detalhado
+python k6_attempts_timeseries.py --labels "Paralelo 1" "Paralelo 2" "Paralelo 3" .\json-1t-detalhado.json .\json-2t-detalhado.json .\json-3t-detalhado.json
+

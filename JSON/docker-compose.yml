@@ -6,6 +6,7 @@ networks:
         - subnet: 172.30.0.0/16
 
 services:
+
   brands-api:
     build: ./CONTEXTOS/brands-api
     ports:
