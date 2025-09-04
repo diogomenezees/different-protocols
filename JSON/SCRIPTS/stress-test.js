@@ -30,10 +30,10 @@ export default function () {
 
 // Salva HTML e JSON no volume montado em /output
 export function handleSummary(data) {
-  const base = '/output/html-json-1t-50vus';
+  const base = '/output/resultado-json-X';
 
   return {
-    [`${base}.html`]: htmlReport(data),
+    [`${base}.page.html`]: htmlReport(data),
     [`${base}.summary.json`]: JSON.stringify(data, null, 2),
   };
 }
