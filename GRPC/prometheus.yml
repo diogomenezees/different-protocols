@@ -1,0 +1,21 @@
+global:
+  scrape_interval: 5s
+  evaluation_interval: 5s
+  scrape_timeout: 4s
+  external_labels:
+    env: "local"
+
+scrape_configs:
+  - job_name: "telegraf"
+    static_configs:
+      - targets: ["telegraf:9273"]
+
+    # (Opcional) apelidos e filtro do seu stack
+    metric_relabel_configs:
+      - source_labels: [com_docker_compose_project]
+        target_label: project
+      - source_labels: [com_docker_compose_service]
+        target_label: service
+      - source_labels: [service]
+        regex: "prometheus|grafana|telegraf"
+        action: drop

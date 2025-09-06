@@ -2,13 +2,13 @@ Individual
 curl "http://localhost:8080/paralelo/nome-do-produto-1"
 
 Stress Test
-docker run --rm -i -e BASE_URL=http://host.docker.internal:8080 -v ${pwd}/stress-test.js:/test.js:ro -v ${pwd}:/output loadimpact/k6 run --summary-export=/output/resultado-json-1.consolidado.json --out json=/output/resultado-json-1.detalhado.json /test.js
+docker run --rm -i -e BASE_URL=http://host.docker.internal:8080 -v ${pwd}/stress-test.js:/test.js:ro -v ${pwd}:/output loadimpact/k6 run --summary-export=/output/resultado-json-1.consolidado.json /test.js
 
 Metrics
 http://localhost:9273/metrics
 
+Prometheus
+http://localhost:9090/query
+
 Grafana
 http://localhost:3000/dashboards
-
-Prometheus
-http://localhost:9090/query?g0.expr=sum+by+%28service%29+%28rate%28docker_container_cpu_usage_total%5B1m%5D%29+%2F+1000000000%29&g0.show_tree=0&g0.tab=graph&g0.range_input=30m&g0.res_type=auto&g0.res_density=medium&g0.display_mode=lines&g0.show_exemplars=0

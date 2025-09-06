@@ -1,5 +1,14 @@
-Sequencial
-docker run --rm -i -e BASE_URL=http://host.docker.internal:8090 -v ${pwd}/test-messagepack-sequencial.js:/test.js:ro -v ${pwd}:/output loadimpact/k6 run --summary-export=/output/resultado-test-container-messagepack-sequencial-1t-50vus.json /test.js
+Individual
+curl "http://localhost:8090/paralelo/nome-do-produto-1"
 
-Paralelo
-docker run --rm -i -e BASE_URL=http://host.docker.internal:8090 -v ${pwd}/test-messagepack-paralelo.js:/test.js:ro -v ${pwd}:/output loadimpact/k6 run --summary-export=/output/resultado-test-container-messagepack-paralelo-1t-50vus.json /test.js
+Stress Test
+docker run --rm -i -e BASE_URL=http://host.docker.internal:8090 -v ${pwd}/stress-test.js:/test.js:ro -v ${pwd}:/output loadimpact/k6 run --summary-export=/output/resultado-json-1.consolidado.json /test.js
+
+Metrics
+http://localhost:9273/metrics
+
+Prometheus
+http://localhost:9090/query
+
+Grafana
+http://localhost:3000/dashboards

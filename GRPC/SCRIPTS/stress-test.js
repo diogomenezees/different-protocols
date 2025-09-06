@@ -4,7 +4,7 @@ import { check } from 'k6';
 // gera HTML bonitão no fim do teste
 import { htmlReport } from 'https://raw.githubusercontent.com/benc-uk/k6-reporter/main/dist/bundle.js';
 
-const baseUrl = __ENV.BASE_URL || 'http://localhost:8080';
+const baseUrl = __ENV.BASE_URL || 'http://localhost:8070';
 
 export let options = {
   vus: 50,           // Usuários virtuais simultâneos
