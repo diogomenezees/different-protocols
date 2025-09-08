@@ -30,7 +30,7 @@ export default function () {
 
 // Salva HTML e JSON no volume montado em /output
 export function handleSummary(data) {
-  const base = '/output/resultado-json-X';
+  const base = '/output/resultado-grpc-X';
 
   return {
     [`${base}.page.html`]: htmlReport(data),

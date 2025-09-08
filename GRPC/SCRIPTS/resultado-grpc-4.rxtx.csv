@@ -1,0 +1,14 @@
+"Time","{container_name=""bff-grpc-api""}","{container_name=""brands-grpc-api""}","{container_name=""categories-grpc-api""}","{container_name=""images-grpc-api""}","{container_name=""products-grpc-api""}","{container_name=""sellers-grpc-api""}","{container_name=""bff-grpc-api""}","{container_name=""brands-grpc-api""}","{container_name=""categories-grpc-api""}","{container_name=""images-grpc-api""}","{container_name=""products-grpc-api""}","{container_name=""sellers-grpc-api""}"
+2025-09-08 19:49:00,38.5 B/s,7.09 B/s,7.86 B/s,7.86 B/s,7.86 B/s,7.86 B/s,38.5 B/s,7.09 B/s,7.86 B/s,7.86 B/s,7.86 B/s,7.86 B/s
+2025-09-08 19:49:15,27.2 B/s,5.89 B/s,5.13 B/s,5.13 B/s,5.89 B/s,5.13 B/s,27.2 B/s,5.89 B/s,5.13 B/s,5.13 B/s,5.89 B/s,5.13 B/s
+2025-09-08 19:49:30,33.2 B/s,6.33 B/s,7.09 B/s,6.33 B/s,7.09 B/s,6.33 B/s,33.2 B/s,6.33 B/s,7.09 B/s,6.33 B/s,7.09 B/s,6.33 B/s
+2025-09-08 19:49:45,67.1 kB/s,11.4 kB/s,11.7 kB/s,10.7 kB/s,13.4 kB/s,11.7 kB/s,86.5 kB/s,20.3 kB/s,13.3 kB/s,15.8 kB/s,23.0 kB/s,13.1 kB/s
+2025-09-08 19:50:00,922 kB/s,93.4 kB/s,94.1 kB/s,86.2 kB/s,109 kB/s,93.2 kB/s,1.19 MB/s,167 kB/s,107 kB/s,128 kB/s,189 kB/s,105 kB/s
+2025-09-08 19:50:15,1.25 MB/s,126 kB/s,127 kB/s,116 kB/s,148 kB/s,126 kB/s,1.61 MB/s,226 kB/s,145 kB/s,173 kB/s,255 kB/s,141 kB/s
+2025-09-08 19:50:30,1.97 MB/s,199 kB/s,200 kB/s,183 kB/s,233 kB/s,198 kB/s,2.54 MB/s,356 kB/s,228 kB/s,273 kB/s,402 kB/s,223 kB/s
+2025-09-08 19:50:45,1.71 MB/s,172 kB/s,173 kB/s,159 kB/s,203 kB/s,172 kB/s,2.21 MB/s,309 kB/s,198 kB/s,237 kB/s,350 kB/s,193 kB/s
+2025-09-08 19:51:00,1.34 MB/s,135 kB/s,136 kB/s,124 kB/s,159 kB/s,135 kB/s,1.73 MB/s,243 kB/s,155 kB/s,186 kB/s,275 kB/s,152 kB/s
+2025-09-08 19:51:15,683 kB/s,68.9 kB/s,69.3 kB/s,63.5 kB/s,80.9 kB/s,69.0 kB/s,882 kB/s,124 kB/s,79.4 kB/s,95.0 kB/s,140 kB/s,77.2 kB/s
+2025-09-08 19:51:30,295 kB/s,29.9 kB/s,29.9 kB/s,27.4 kB/s,35.0 kB/s,30.1 kB/s,380 kB/s,53.4 kB/s,34.3 kB/s,41.0 kB/s,60.7 kB/s,33.5 kB/s
+2025-09-08 19:51:45,30.1 B/s,5.56 B/s,6.33 B/s,5.56 B/s,6.33 B/s,6.33 B/s,30.1 B/s,5.56 B/s,6.33 B/s,5.56 B/s,6.33 B/s,6.33 B/s
+2025-09-08 19:52:00,31.6 B/s,6.33 B/s,6.33 B/s,6.33 B/s,6.33 B/s,6.33 B/s,31.6 B/s,6.33 B/s,6.33 B/s,6.33 B/s,6.33 B/s,6.33 B/s

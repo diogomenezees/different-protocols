@@ -1,0 +1,12 @@
+"Time","{container_name=""bff-grpc-api""}","{container_name=""brands-grpc-api""}","{container_name=""categories-grpc-api""}","{container_name=""images-grpc-api""}","{container_name=""products-grpc-api""}","{container_name=""sellers-grpc-api""}","{container_name=""bff-grpc-api""}","{container_name=""brands-grpc-api""}","{container_name=""categories-grpc-api""}","{container_name=""images-grpc-api""}","{container_name=""products-grpc-api""}","{container_name=""sellers-grpc-api""}"
+2025-09-08 19:52:15,31.6 B/s,6.33 B/s,6.33 B/s,6.33 B/s,6.33 B/s,6.33 B/s,31.6 B/s,6.33 B/s,6.33 B/s,6.33 B/s,6.33 B/s,6.33 B/s
+2025-09-08 19:52:30,33.2 B/s,7.09 B/s,6.33 B/s,7.09 B/s,6.33 B/s,6.33 B/s,33.2 B/s,7.09 B/s,6.33 B/s,7.09 B/s,6.33 B/s,6.33 B/s
+2025-09-08 19:52:45,31.6 B/s,6.33 B/s,6.33 B/s,6.33 B/s,6.33 B/s,6.33 B/s,31.6 B/s,6.33 B/s,6.33 B/s,6.33 B/s,6.33 B/s,6.33 B/s
+2025-09-08 19:53:00,492 kB/s,50.2 kB/s,50.3 kB/s,42.0 kB/s,58.9 kB/s,49.4 kB/s,636 kB/s,89.1 kB/s,57.1 kB/s,62.5 kB/s,101 kB/s,55.7 kB/s
+2025-09-08 19:53:15,917 kB/s,92.7 kB/s,93.2 kB/s,85.9 kB/s,109 kB/s,92.0 kB/s,1.18 MB/s,166 kB/s,106 kB/s,128 kB/s,188 kB/s,104 kB/s
+2025-09-08 19:53:30,1.71 MB/s,173 kB/s,174 kB/s,161 kB/s,204 kB/s,172 kB/s,2.21 MB/s,310 kB/s,199 kB/s,239 kB/s,352 kB/s,194 kB/s
+2025-09-08 19:53:45,2.01 MB/s,203 kB/s,204 kB/s,189 kB/s,240 kB/s,202 kB/s,2.60 MB/s,364 kB/s,233 kB/s,281 kB/s,413 kB/s,228 kB/s
+2025-09-08 19:54:00,1.89 MB/s,190 kB/s,191 kB/s,181 kB/s,225 kB/s,190 kB/s,2.44 MB/s,342 kB/s,219 kB/s,270 kB/s,388 kB/s,214 kB/s
+2025-09-08 19:54:15,1.07 MB/s,108 kB/s,108 kB/s,100 kB/s,127 kB/s,108 kB/s,1.38 MB/s,194 kB/s,124 kB/s,149 kB/s,220 kB/s,121 kB/s
+2025-09-08 19:54:30,669 kB/s,67.5 kB/s,67.5 kB/s,62.7 kB/s,79.4 kB/s,67.6 kB/s,862 kB/s,121 kB/s,76.9 kB/s,93.4 kB/s,137 kB/s,76.1 kB/s
+2025-09-08 19:54:45,22.6 B/s,4.36 B/s,4.36 B/s,5.13 B/s,4.36 B/s,4.36 B/s,22.6 B/s,4.36 B/s,4.36 B/s,5.13 B/s,4.36 B/s,4.36 B/s

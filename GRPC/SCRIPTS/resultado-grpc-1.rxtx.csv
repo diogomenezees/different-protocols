@@ -1,0 +1,13 @@
+"Time","{container_name=""bff-grpc-api""}","{container_name=""brands-grpc-api""}","{container_name=""categories-grpc-api""}","{container_name=""images-grpc-api""}","{container_name=""products-grpc-api""}","{container_name=""sellers-grpc-api""}","{container_name=""bff-grpc-api""}","{container_name=""brands-grpc-api""}","{container_name=""categories-grpc-api""}","{container_name=""images-grpc-api""}","{container_name=""products-grpc-api""}","{container_name=""sellers-grpc-api""}"
+2025-09-08 19:17:15,37.0 B/s,7.86 B/s,7.86 B/s,7.09 B/s,7.09 B/s,7.09 B/s,37.0 B/s,7.86 B/s,7.86 B/s,7.09 B/s,7.09 B/s,7.09 B/s
+2025-09-08 19:17:30,32.4 B/s,7.09 B/s,7.09 B/s,5.56 B/s,6.33 B/s,6.33 B/s,32.4 B/s,7.09 B/s,7.09 B/s,5.56 B/s,6.33 B/s,6.33 B/s
+2025-09-08 19:17:45,38.5 B/s,7.86 B/s,7.86 B/s,7.09 B/s,7.86 B/s,7.86 B/s,38.5 B/s,7.86 B/s,7.86 B/s,7.09 B/s,7.86 B/s,7.86 B/s
+2025-09-08 19:18:00,201 kB/s,20.9 kB/s,21.0 kB/s,19.2 kB/s,23.6 kB/s,20.9 kB/s,259 kB/s,36.4 kB/s,23.5 kB/s,28.0 kB/s,40.7 kB/s,22.8 kB/s
+2025-09-08 19:18:15,773 kB/s,78.7 kB/s,79.5 kB/s,72.5 kB/s,90.8 kB/s,79.1 kB/s,996 kB/s,140 kB/s,90.2 kB/s,107 kB/s,158 kB/s,88.1 kB/s
+2025-09-08 19:18:30,1.05 MB/s,107 kB/s,108 kB/s,98.5 kB/s,124 kB/s,107 kB/s,1.35 MB/s,190 kB/s,123 kB/s,146 kB/s,215 kB/s,120 kB/s
+2025-09-08 19:18:45,1.67 MB/s,170 kB/s,171 kB/s,157 kB/s,198 kB/s,171 kB/s,2.15 MB/s,303 kB/s,195 kB/s,233 kB/s,342 kB/s,191 kB/s
+2025-09-08 19:19:00,1.17 MB/s,118 kB/s,119 kB/s,109 kB/s,138 kB/s,119 kB/s,1.50 MB/s,211 kB/s,135 kB/s,162 kB/s,239 kB/s,133 kB/s
+2025-09-08 19:19:15,908 kB/s,92.1 kB/s,92.8 kB/s,85.5 kB/s,108 kB/s,93.2 kB/s,1.17 MB/s,164 kB/s,106 kB/s,127 kB/s,186 kB/s,104 kB/s
+2025-09-08 19:19:30,316 kB/s,31.9 kB/s,32.2 kB/s,29.9 kB/s,37.4 kB/s,32.6 kB/s,407 kB/s,57.2 kB/s,36.7 kB/s,44.2 kB/s,64.6 kB/s,36.5 kB/s
+2025-09-08 19:19:45,10.1 kB/s,1.06 kB/s,952 B/s,919 B/s,1.12 kB/s,997 B/s,13.1 kB/s,1.83 kB/s,1.11 kB/s,1.41 kB/s,1.92 kB/s,1.10 kB/s
+2025-09-08 19:20:00,29.5 B/s,5.89 B/s,5.89 B/s,5.89 B/s,5.89 B/s,5.89 B/s,29.5 B/s,5.89 B/s,5.89 B/s,5.89 B/s,5.89 B/s,5.89 B/s
